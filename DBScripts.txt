@@ -1,0 +1,14 @@
+﻿
+USE master
+GO
+CREATE DATABASE [FuelPricesDB]
+GO
+USE [FuelPricesDB]
+GO
+CREATE TABLE [dbo].[FuelPrices](
+	[FuelPricesKey] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	[Period] [smalldatetime] NOT NULL,
+	[Price] [decimal](6, 3) NOT NULL
+)
+GO
+
